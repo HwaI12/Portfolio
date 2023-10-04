@@ -11,7 +11,7 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Top />} />
+          <Route path="/portfolio-js" element={<Top />} />
         </Routes>
 
         <Footer />
