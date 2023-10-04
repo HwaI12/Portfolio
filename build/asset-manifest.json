@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio-js/static/css/main.f40e7472.css",
+    "main.js": "/portfolio-js/static/js/main.8a9a1bc4.js",
+    "static/media/hwami.jpg": "/portfolio-js/static/media/hwami.00d5147d32da26ae645e.jpg",
+    "index.html": "/portfolio-js/index.html",
+    "main.f40e7472.css.map": "/portfolio-js/static/css/main.f40e7472.css.map",
+    "main.8a9a1bc4.js.map": "/portfolio-js/static/js/main.8a9a1bc4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f40e7472.css",
+    "static/js/main.8a9a1bc4.js"
+  ]
+}
