@@ -8,11 +8,6 @@
   width: 100%;
 }
 
-img {
-  width: 300px;
-  height: 500px;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -104,16 +99,20 @@ header.is_scroll a:hover {
   margin-bottom: 15vh;
 }
 
-.News-ul{
+.News-ul {
   display: flex;
 }
 
 .Top-detail {
   position: relative;
   top: 20px;
-  left: 0; /* 左に移動しないように変更 */
-  margin-left: 50px; /* 左マージンを追加 */
+  left: 0;
+  margin-left: 50px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .Top-detail::before {
@@ -127,7 +126,28 @@ header.is_scroll a:hover {
   left: -20px;
 }
 
-.page-section{
+.detail-news {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.title a{
+  text-decoration: none;
+  color:#2f2f2e;
+}
+
+.title a:hover{
+  color: rgb(182, 172, 153);
+  transition: all 0.3s;
+}
+
+.date{
+  margin-right: 20px;
+}
+
+.page-section {
   text-align: left;
 }
 
@@ -137,7 +157,7 @@ header.is_scroll a:hover {
   display: block;
 }
 
-.Top-detail ul{
+.Top-detail ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -155,6 +175,8 @@ header.is_scroll a:hover {
   margin-bottom: 12px;
   margin-top: 12px;
   height: 300px;
+  width: 300px;
+  height: 500px;
 }
 
 #skill button {
@@ -189,16 +211,49 @@ footer {
   color: #FEFEFD;
 }
 
+.mySwiper{
+  font-size: 15px;
+}
+
+.mySwiper img{
+  height: 80%;
+  width: 90%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
   header {
     padding: 0 3vw;
   }
+
   header .logo a,
   header .nav a {
     font-size: 19px;
     margin: 0 13px;
   }
+
   header.is_scroll a {
     font-size: 17px;
+  }
+
+  .Top-detail {
+    font-size: 18px;
+  }
+
+  .detail-news {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: column;
+  }
+
+  .date{
+    margin: 0;
+  }
+
+  .mySwiper img{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
   }
 }

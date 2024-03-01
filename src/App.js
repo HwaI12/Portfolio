@@ -3,6 +3,9 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Top from "./components/Pages/Top";
+import Koijan from "./components/Work/koijan";
+import Moneyrecords from "./components/Work/moneyrecords";
+
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
 
         <Routes>
           <Route path="/portfolio-js" element={<Top />} />
+          <Route path="/portfolio-js/koi-jan" element={<Koijan />} />
+          <Route path="/portfolio-js/money-records" element={<Moneyrecords />} />
+          
         </Routes>
 
         <Footer />
