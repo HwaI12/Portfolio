@@ -14,7 +14,7 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/portfolio-js" element={<Top />} />
+          <Route path="/" element={<Top />} />
           <Route path="/portfolio-js/koi-jan" element={<Koijan />} />
           <Route path="/portfolio-js/money-records" element={<Moneyrecords />} />
           
