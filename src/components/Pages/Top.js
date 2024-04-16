@@ -7,45 +7,35 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination } from 'swiper/modules';
 
-const HomePage = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return (
-    <div className="container text-center">
+const TopProfile = () => {
+    return (
       <section className="Top" id="Topprofile">
         <img src={profileImage} className="profileImage" alt="" />
         <h2>Ishikawa Fami</h2>
         <p>Faculty of Data Science, Musashino University</p>
       </section>
+    );
+  };
 
-      <section className="page-section" id="Aboutme">
-        <div className="service">
-          <div className="menu-title">
-            <h2 className="text-uppercase">About</h2>
-          </div>
-          <div className="Top-detail">
-            <div>
-              <p>2022年  武蔵野大学附属高等学校 卒業</p>
-              <p>2022年  武蔵野大学 データサイエンス学部 入学</p>
-              <p>大学公認クラブ「BohPJ」/ エンジニア学生団体「MUENT」所属</p>
+const AboutMe = () => {
+    return (
+        <section className="page-section" id="Aboutme">
+            <div className="service">
+                <div className="menu-title">
+                    <h2 className="text-uppercase">About</h2>
+                </div>
+                <div className='Top-detail'>
+                    <p>2022年  武蔵野大学附属高等学校 卒業</p>
+                    <p>2022年  武蔵野大学 データサイエンス学部 入学</p>
+                    <p>大学公認クラブ「BohPJ」/ エンジニア学生団体「MUENT」所属</p>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="page-section" id="News">
+        </section>
+    )
+}
+const News = () => {
+    return (
+        <section className="page-section" id="News">
         <div className="service">
           <div className="menu-title">
             <h2 className="text-uppercase">News</h2>
@@ -82,7 +72,13 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+    )
+}
 
+const Works = () => {
+    const isMobile = window.innerWidth <= 768;
+  
+    return (
       <section className="page-section" id="Works">
         <div className="service">
           <div className="menu-title">
@@ -130,8 +126,13 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+    );
+  };
+  
 
-      <section className="page-section" id="Skill">
+const Skill = () => {
+    return (
+        <section className="page-section" id="Skill">
         <div className="service">
           <div className="text-center">
             <h2 className="section-heading text-uppercase">Skill</h2>
@@ -141,8 +142,12 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+    )
+}
 
-      <section className="page-section" id="Contact">
+const Contact = () => {
+    return (
+        <section className="page-section" id="Contact">
         <div className="service">
           <div className="text-center">
             <h2 className="section-heading text-uppercase">PORTFOLIO</h2>
@@ -152,8 +157,34 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
-};
+    )
+}
 
-export default HomePage;
+const HomePage = () => {
+    const [setIsMobile] = useState(window.innerWidth <= 768);
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, [setIsMobile]); // Include setIsMobile in the dependency array
+  
+    return (
+      <div className="container text-center">
+        <TopProfile />
+        <AboutMe />
+        <News />
+        <Works />
+        <Skill />
+        <Contact />
+      </div>
+    );
+  };
+  
+  export default HomePage;
