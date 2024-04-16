@@ -128,22 +128,27 @@ header.is_scroll a:hover {
 
 .detail-news {
   display: flex;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.title a{
-  text-decoration: none;
-  color:#2f2f2e;
+.detail-news p {
+  margin-bottom: 0;
 }
 
-.title a:hover{
+.title a {
+  text-decoration: none;
+  color: #2f2f2e;
+}
+
+.title a:hover {
   color: rgb(182, 172, 153);
   transition: all 0.3s;
 }
 
-.date{
+.date {
   margin-right: 20px;
 }
 
@@ -211,11 +216,11 @@ footer {
   color: #FEFEFD;
 }
 
-.mySwiper{
+.mySwiper {
   font-size: 15px;
 }
 
-.mySwiper img{
+.mySwiper img {
   height: 80%;
   width: 90%;
   object-fit: cover;
@@ -245,13 +250,14 @@ footer {
     flex-wrap: wrap;
     align-items: baseline;
     flex-direction: column;
+    margin-bottom: 20px;
   }
 
-  .date{
+  .date {
     margin: 0;
   }
 
-  .mySwiper img{
+  .mySwiper img {
     height: 80%;
     width: 80%;
     object-fit: cover;
