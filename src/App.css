@@ -216,14 +216,16 @@ footer {
   color: #FEFEFD;
 }
 
-.mySwiper {
-  font-size: 15px;
+.slick-prev:before,
+.slick-next:before {
+  color: #BFB7A8 !important;
+  font-size: 25px !important;
 }
 
-.mySwiper img {
-  height: 80%;
-  width: 90%;
-  object-fit: cover;
+.slider-list {
+  padding: 20px;
+  text-align: center;
+  height: 300px;
 }
 
 @media screen and (max-width: 768px) {
@@ -241,8 +243,13 @@ footer {
     font-size: 17px;
   }
 
+  .profileImage {
+    height: 50vw;
+    width: 50vw;
+  }
+
   .Top-detail {
-    font-size: 18px;
+    font-size: 2.5vw;
   }
 
   .detail-news {

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import profileImage from "../../Images/hwami.jpg";
-import miraiPJ from "../../Images/global-study.png";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Pagination } from 'swiper/modules';
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const TopProfile = () => {
   return (
@@ -76,55 +76,43 @@ const News = () => {
 }
 
 const Works = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
   return (
     <section className="page-section" id="Works">
       <div className="service">
         <div className="menu-title">
           <h2 className="text-uppercase">Works</h2>
         </div>
-        <div className="swiper">
-          {window.innerWidth <= 768 ? (
-            <Swiper
-              slidesPerView={1}
-              pagination={{
-                dynamicBullets: true,
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              <SwiperSlide>MRHMDと物体認識を活用した日常環境における自然な外国語学習手法の提案
-                <img src={miraiPJ} className="miraiPJ" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-            </Swiper>
-          ) : (
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={30}
-              pagination={{
-                dynamicBullets: true,
-              }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              <SwiperSlide>MRHMDと物体認識を活用した日常環境における自然な外国語学習手法の提案
-                <img src={miraiPJ} className="miraiPJ" alt="" />
-              </SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-            </Swiper>
-          )}
-        </div>
+        <Slider {...settings}>
+          <div className='slider-list'>
+            <h3>1</h3>
+          </div>
+          <div className='slider-list'>
+            <h3>2</h3>
+          </div>
+          <div className='slider-list'>
+            <h3>3</h3>
+          </div>
+          <div className='slider-list'>
+            <h3>4</h3>
+          </div>
+          <div className='slider-list'>
+            <h3>5</h3>
+          </div>
+          <div className='slider-list'>
+            <h3>6</h3>
+          </div>
+        </Slider>
       </div>
     </section>
-  );
+  )
 };
 
 
