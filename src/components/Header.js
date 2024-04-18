@@ -35,7 +35,6 @@ const Header = () => {
         <Scroll to="News" className="header-scroll" offset={-110}>News</Scroll>
         <Scroll to="Works" className="header-scroll" offset={-110}>Works</Scroll>
         <Scroll to="Skill" className="header-scroll" offset={-110}>Skill</Scroll>
-        <Scroll to="Contact" className="header-scroll" offset={-110}>Contact</Scroll>
       </nav>
     </header>
   );
