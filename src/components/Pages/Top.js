@@ -76,11 +76,31 @@ const News = () => {
 }
 
 const Works = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setSlidesToShow(3);
+      } else if (window.innerWidth >= 576) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(1);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
   };
 
@@ -112,8 +132,9 @@ const Works = () => {
         </Slider>
       </div>
     </section>
-  )
+  );
 };
+
 
 
 
@@ -133,20 +154,6 @@ const Skill = () => {
 }
 
 const HomePage = () => {
-  const [, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
     <div className="container text-center">
       <TopProfile />
