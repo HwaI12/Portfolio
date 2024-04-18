@@ -132,21 +132,6 @@ const Skill = () => {
   )
 }
 
-const Contact = () => {
-  return (
-    <section className="page-section" id="Contact">
-      <div className="service">
-        <div className="text-center">
-          <h2 className="section-heading text-uppercase">PORTFOLIO</h2>
-          <h3 className="section-subheading text-muted mb-5">
-            私が作った作品一覧です
-          </h3>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 const HomePage = () => {
   const [, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -169,7 +154,6 @@ const HomePage = () => {
       <News />
       <Works />
       <Skill />
-      <Contact />
     </div>
   );
 };
