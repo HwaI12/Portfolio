@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const TopProfile = () => {
+const Topprofile = () => {
   return (
     <section className="Top" id="Topprofile">
       <img src={profileImage} className="profileImage" alt="" />
@@ -162,7 +162,7 @@ const Skill = () => {
 const HomePage = () => {
   return (
     <div className="container text-center">
-      <TopProfile />
+      <Topprofile />
       <AboutMe />
       <News />
       <Works />

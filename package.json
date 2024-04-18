@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.9.0"
   },
   "homepage": "https://hwai12.github.io/portfolio"
 }
