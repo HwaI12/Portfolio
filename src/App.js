@@ -6,7 +6,6 @@ import Top from "./components/Pages/Top";
 import Koijan from "./components/Work/koijan";
 import Moneyrecords from "./components/Work/moneyrecords";
 
-
 function App() {
   return (
     <Router>
@@ -14,9 +13,9 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Top />} />
-          <Route path="/portfolio-js/koi-jan" element={<Koijan />} />
-          <Route path="/portfolio-js/money-records" element={<Moneyrecords />} />
+          <Route path= "/portfolio" element={<Top />} />
+          <Route path="/portfolio/koi-jan" element={<Koijan />} />
+          <Route path="/portfolio/money-records" element={<Moneyrecords />} />
           
         </Routes>
 
