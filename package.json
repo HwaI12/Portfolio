@@ -1,5 +1,5 @@
 {
-  "name": "my-portfolio",
+  "name": "hwami-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,7 +47,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "react-scroll": "^1.8.9"
   },
   "homepage": "https://hwai12.github.io/portfolio"
