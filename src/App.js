@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
+import AtherHeader from "./components/AtherHeader";
 import Footer from "./components/Footer";
 import Top from "./components/Pages/Top";
-import Koijan from "./components/Work/koijan";
-import Moneyrecords from "./components/Work/moneyrecords";
+import Koijan from "./components/Pages/Work/koijan";
+import Moneyrecords from "./components/Pages/Work/moneyrecords";
 
 function App() {
+  const isPortfolioPage = window.location.pathname.startsWith("/portfolio");
+  const HeaderToUse = isPortfolioPage ? AtherHeader : Header;
+
   return (
     <Router>
       <div className="App">
-        <Header />
+        <HeaderToUse />
 
         <Routes>
           <Route path="portfolio/" element={<Top />} />
@@ -23,5 +27,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

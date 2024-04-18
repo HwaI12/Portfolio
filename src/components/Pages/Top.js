@@ -25,7 +25,7 @@ const AboutMe = () => {
           <h2 className="text-uppercase">About</h2>
         </div>
         <div className='Top-detail'>
-          <p>2022年  武蔵野大学附属高等学校 卒業</p>
+          <p>2022年  武蔵野大学高等学校 卒業</p>
           <p>2022年  武蔵野大学 データサイエンス学部 入学</p>
           <p>大学公認クラブ「BohPJ」/ エンジニア学生団体「MUENT」所属</p>
         </div>
@@ -67,6 +67,12 @@ const News = () => {
             <p class="date">2023/12/03</p>
             <p class="title">
               <a href=" portfolio-js">サポーターズ主催 技育CAMPマンスリーハッカソン vol.12 参加</a>
+            </p>
+          </div>
+          <div className='detail-news'>
+            <p class="date">2024/03/16</p>
+            <p class="title">
+              <a href=" portfolio-js">情報処理学会 第86回全国大会 発表</a>
             </p>
           </div>
         </div>
