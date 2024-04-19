@@ -10,4 +10,4 @@
 
 ## 使用方法
 
-開発サーバーが起動したら、ブラウザで[http://localhost:3000/](http://localhost:3000/)にアクセスしてポートフォリオを表示できます。
+開発サーバーが起動したら、ブラウザで[http://localhost:3000/portfolio](http://localhost:3000/portfolio)にアクセスしてポートフォリオを表示できます。

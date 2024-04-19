@@ -158,25 +158,25 @@ const Skill = () => {
           <div className="col-md-4">
             <h4>プログラミング言語</h4>
             <ul>
-              <li>Python <progress value="70" max="100"></progress></li>
-              <li>JavaScript / TypeScript <progress value="80" max="100"></progress></li>
+              <li>Python (Intermediate)</li>
+              <li>JavaScript / TypeScript (Advanced)</li>
             </ul>
           </div>
           <div className="col-md-4">
             <h4>フレームワーク・ライブラリ</h4>
             <ul>
-              <li>React <progress value="85" max="100"></progress></li>
-              <li>Vue <progress value="75" max="100"></progress></li>
-              <li>Next.js <progress value="70" max="100"></progress></li>
-              <li>Node.js <progress value="80" max="100"></progress></li>
+              <li>React (Advanced)</li>
+              <li>Vue (Intermediate)</li>
+              <li>Next.js (Intermediate)</li>
+              <li>Node.js (Advanced)</li>
             </ul>
           </div>
           <div className="col-md-4">
             <h4>データベース</h4>
             <ul>
-              <li>SQL <progress value="75" max="100"></progress></li>
-              <li>PostgreSQL <progress value="70" max="100"></progress></li>
-              <li>Supabase <progress value="65" max="100"></progress></li>
+              <li>SQL (Advanced)</li>
+              <li>PostgreSQL (Intermediate)</li>
+              <li>Supabase (Intermediate)</li>
             </ul>
           </div>
         </div>
@@ -184,28 +184,28 @@ const Skill = () => {
           <div className="col-md-4">
             <h4>フロントエンド開発</h4>
             <ul>
-              <li>HTML <progress value="90" max="100"></progress></li>
-              <li>CSS <progress value="85" max="100"></progress></li>
+              <li>HTML (Advanced)</li>
+              <li>CSS (Advanced)</li>
             </ul>
           </div>
           <div className="col-md-4">
             <h4>バージョン管理</h4>
             <ul>
-              <li>Git <progress value="80" max="100"></progress></li>
-              <li>GitHub <progress value="75" max="100"></progress></li>
+              <li>Git (Advanced)</li>
+              <li>GitHub (Intermediate)</li>
             </ul>
           </div>
           <div className="col-md-4">
             <h4>その他</h4>
             <ul>
-              <li>Docker <progress value="70" max="100"></progress></li>
+              <li>Docker (Intermediate)</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 const HomePage = () => {
   return (
