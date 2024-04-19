@@ -10,7 +10,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import pythonLogo from '../../Images/icon_image/python_logo_icon_168886.png';
 import jsLogo from '../../Images/icon_image/javascript_plain_logo_icon_146454.png';
 import tsLogo from '../../Images/icon_image/typescript_original_logo_icon_146317.png';
-import reactLogo from '../../Images/icon_image/react_logo_icon_168754.png';
+import reactLogo from '../../Images/icon_image/react_original_logo_icon_146374.png';
 import vueLogo from '../../Images/icon_image/file_type_vue_icon_130078.png';
 import nextLogo from '../../Images/icon_image/nextjs_icon_132160.png';
 import nodeLogo from '../../Images/icon_image/nodejs_plain_logo_icon_146409.png';
@@ -19,9 +19,8 @@ import supabaseLogo from '../../Images/icon_image/supabase_logo_icon_249481.png'
 import htmlLogo from '../../Images/icon_image/file_type_html_icon_130541.png';
 import cssLogo from '../../Images/icon_image/file_type_css_icon_130661.png';
 import gitLogo from '../../Images/icon_image/git_plain_logo_icon_146507.png';
-import githubLogo from '../../Images/icon_image/github_logo_icon_168626.png';
-import dockerLogo from '../../Images/icon_image/docker_plain_logo_icon_146574.png';
-
+import githubLogo from '../../Images/icon_image/github-logo_icon-icons.com_73546.png';
+import dockerLogo from '../../Images/icon_image/docker_icon_146192.png';
 
 const Topprofile = () => {
   return (
