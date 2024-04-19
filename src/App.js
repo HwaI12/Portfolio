@@ -3,7 +3,8 @@ import "./App.css";
 import Header from "./components/Header";
 import AtherHeader from "./components/AtherHeader";
 import Footer from "./components/Footer";
-import Top from "./components/Pages/Top";
+// import Top from "./components/Pages/Top";
+import Top from "./components/Pages/Top/Top";
 import Koijan from "./components/Pages/Work/koijan";
 import Moneyrecords from "./components/Pages/Work/moneyrecords";
 
