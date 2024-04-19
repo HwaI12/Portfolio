@@ -7,6 +7,22 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import pythonLogo from '../../Images/icon_image/python_logo_icon_168886.png';
+import jsLogo from '../../Images/icon_image/javascript_plain_logo_icon_146454.png';
+import tsLogo from '../../Images/icon_image/typescript_original_logo_icon_146317.png';
+import reactLogo from '../../Images/icon_image/react_logo_icon_168754.png';
+import vueLogo from '../../Images/icon_image/file_type_vue_icon_130078.png';
+import nextLogo from '../../Images/icon_image/nextjs_icon_132160.png';
+import nodeLogo from '../../Images/icon_image/nodejs_plain_logo_icon_146409.png';
+import postgresLogo from '../../Images/icon_image/postgresql_original_logo_icon_146391.png';
+import supabaseLogo from '../../Images/icon_image/supabase_logo_icon_249481.png';
+import htmlLogo from '../../Images/icon_image/file_type_html_icon_130541.png';
+import cssLogo from '../../Images/icon_image/file_type_css_icon_130661.png';
+import gitLogo from '../../Images/icon_image/git_plain_logo_icon_146507.png';
+import githubLogo from '../../Images/icon_image/github_logo_icon_168626.png';
+import dockerLogo from '../../Images/icon_image/docker_plain_logo_icon_146574.png';
+
+
 const Topprofile = () => {
   return (
     <section className="Top" id="Topprofile">
@@ -142,63 +158,36 @@ const Works = () => {
 };
 
 
-
-
 const Skill = () => {
+  const skillLogos = [
+    { src: pythonLogo, alt: 'Python' },
+    { src: jsLogo, alt: 'JavaScript' },
+    { src: tsLogo, alt: 'TypeScript' },
+    { src: reactLogo, alt: 'React' },
+    { src: vueLogo, alt: 'Vue.js' },
+    { src: nextLogo, alt: 'Next.js' },
+    { src: nodeLogo, alt: 'Node.js' },
+    { src: postgresLogo, alt: 'PostgreSQL' },
+    { src: supabaseLogo, alt: 'Supabase' },
+    { src: htmlLogo, alt: 'HTML' },
+    { src: cssLogo, alt: 'CSS' },
+    { src: gitLogo, alt: 'Git' },
+    { src: githubLogo, alt: 'GitHub' },
+    { src: dockerLogo, alt: 'Docker' },
+  ];
+
   return (
     <section className="page-section" id="Skill">
-      <div className="container">
+      <div className="service">
         <div className="text-center">
-          <h2 className="section-heading text-uppercase">Skills</h2>
-          <h3 className="section-subheading text-muted mb-5">
-            私が使える技術やツールです
-          </h3>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
-            <h4>プログラミング言語</h4>
+          <h2 className="section-heading text-uppercase">Skill</h2>
+          <div className="skill-image-list">
             <ul>
-              <li>Python (Intermediate)</li>
-              <li>JavaScript / TypeScript (Advanced)</li>
-            </ul>
-          </div>
-          <div className="col-md-4">
-            <h4>フレームワーク・ライブラリ</h4>
-            <ul>
-              <li>React (Advanced)</li>
-              <li>Vue (Intermediate)</li>
-              <li>Next.js (Intermediate)</li>
-              <li>Node.js (Advanced)</li>
-            </ul>
-          </div>
-          <div className="col-md-4">
-            <h4>データベース</h4>
-            <ul>
-              <li>SQL (Advanced)</li>
-              <li>PostgreSQL (Intermediate)</li>
-              <li>Supabase (Intermediate)</li>
-            </ul>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
-            <h4>フロントエンド開発</h4>
-            <ul>
-              <li>HTML (Advanced)</li>
-              <li>CSS (Advanced)</li>
-            </ul>
-          </div>
-          <div className="col-md-4">
-            <h4>バージョン管理</h4>
-            <ul>
-              <li>Git (Advanced)</li>
-              <li>GitHub (Intermediate)</li>
-            </ul>
-          </div>
-          <div className="col-md-4">
-            <h4>その他</h4>
-            <ul>
-              <li>Docker (Intermediate)</li>
+              {skillLogos.map((logo, index) => (
+                <li key={index}>
+                  <img src={logo.src} alt={logo.alt} />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
