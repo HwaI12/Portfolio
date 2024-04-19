@@ -1,5 +1,4 @@
-// Skill.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import pythonLogo from '../../../Images/icon_image/python_logo_icon_168886.png';
 import jsLogo from '../../../Images/icon_image/javascript_plain_logo_icon_146454.png';
@@ -16,8 +15,31 @@ import gitLogo from '../../../Images/icon_image/git_plain_logo_icon_146507.png';
 import githubLogo from '../../../Images/icon_image/github-logo_icon-icons.com_73546.png';
 import dockerLogo from '../../../Images/icon_image/docker_icon_146192.png';
 
-
 const Skill = () => {
+  const [numColumns, setNumColumns] = useState(5);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1200) {
+        setNumColumns(5);
+      } else if (window.innerWidth >= 992) {
+        setNumColumns(4);
+      } else if (window.innerWidth >= 768) {
+        setNumColumns(3);
+      } else if (window.innerWidth >= 576) {
+        setNumColumns(2);
+      } else {
+        setNumColumns(1);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const skillLogos = [
     { src: pythonLogo, alt: 'Python' },
     { src: jsLogo, alt: 'JavaScript' },
@@ -40,14 +62,14 @@ const Skill = () => {
       <div className="service">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">Skill</h2>
-          <div className="skill-image-list">
-            <ul className="logo-grid">
-              {skillLogos.map((logo, index) => (
-                <li key={index}>
-                  <img src={logo.src} alt={logo.alt} />
-                </li>
-              ))}
-            </ul>
+          <div className="skill-image-list" style={{ gridTemplateColumns: `repeat(${numColumns}, 1fr)` }}>
+            {skillLogos.map((logo, index) => (
+              <img
+                key={index}
+                src={logo.src}
+                alt={logo.alt}
+              />
+            ))}
           </div>
         </div>
       </div>

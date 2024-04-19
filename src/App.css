@@ -228,13 +228,20 @@ footer {
   height: 300px;
 }
 
-.logo-grid {
+.skill-image-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 20px;
-  list-style: none;
-  padding: 0;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  justify-items: center;
 }
+
+.skill-image-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -278,19 +285,4 @@ footer {
     width: 80%;
     object-fit: cover;
   }
-
-  .logo-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-}
-
-
-@media screen and (max-width: 576px) {
-  .logo-grid {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  }
-}
-
-.logo-grid li img {
-  max-width: 100%;
 }
