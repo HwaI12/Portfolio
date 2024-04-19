@@ -18,41 +18,41 @@ import dockerLogo from '../../../Images/icon_image/docker_icon_146192.png';
 
 
 const Skill = () => {
-    const skillLogos = [
-      { src: pythonLogo, alt: 'Python' },
-      { src: jsLogo, alt: 'JavaScript' },
-      { src: tsLogo, alt: 'TypeScript' },
-      { src: reactLogo, alt: 'React' },
-      { src: vueLogo, alt: 'Vue.js' },
-      { src: nextLogo, alt: 'Next.js' },
-      { src: nodeLogo, alt: 'Node.js' },
-      { src: postgresLogo, alt: 'PostgreSQL' },
-      { src: supabaseLogo, alt: 'Supabase' },
-      { src: htmlLogo, alt: 'HTML' },
-      { src: cssLogo, alt: 'CSS' },
-      { src: gitLogo, alt: 'Git' },
-      { src: githubLogo, alt: 'GitHub' },
-      { src: dockerLogo, alt: 'Docker' },
-    ];
-  
-    return (
-      <section className="page-section" id="Skill">
-        <div className="service">
-          <div className="text-center">
-            <h2 className="section-heading text-uppercase">Skill</h2>
-            <div className="skill-image-list">
-              <ul>
-                {skillLogos.map((logo, index) => (
-                  <li key={index}>
-                    <img src={logo.src} alt={logo.alt} />
-                  </li>
-                ))}
-              </ul>
-            </div>
+  const skillLogos = [
+    { src: pythonLogo, alt: 'Python' },
+    { src: jsLogo, alt: 'JavaScript' },
+    { src: tsLogo, alt: 'TypeScript' },
+    { src: reactLogo, alt: 'React' },
+    { src: vueLogo, alt: 'Vue.js' },
+    { src: nextLogo, alt: 'Next.js' },
+    { src: nodeLogo, alt: 'Node.js' },
+    { src: postgresLogo, alt: 'PostgreSQL' },
+    { src: supabaseLogo, alt: 'Supabase' },
+    { src: htmlLogo, alt: 'HTML' },
+    { src: cssLogo, alt: 'CSS' },
+    { src: gitLogo, alt: 'Git' },
+    { src: githubLogo, alt: 'GitHub' },
+    { src: dockerLogo, alt: 'Docker' },
+  ];
+
+  return (
+    <section className="page-section" id="Skill">
+      <div className="service">
+        <div className="text-center">
+          <h2 className="section-heading text-uppercase">Skill</h2>
+          <div className="skill-image-list">
+            <ul className="logo-grid">
+              {skillLogos.map((logo, index) => (
+                <li key={index}>
+                  <img src={logo.src} alt={logo.alt} />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </section>
-    );
-  };
+      </div>
+    </section>
+  );
+};
 
 export default Skill;

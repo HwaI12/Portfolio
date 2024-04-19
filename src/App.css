@@ -228,6 +228,15 @@ footer {
   height: 300px;
 }
 
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+
 @media screen and (max-width: 768px) {
   header {
     padding: 0 3vw;
@@ -269,4 +278,19 @@ footer {
     width: 80%;
     object-fit: cover;
   }
+
+  .logo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .logo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}
+
+.logo-grid li img {
+  max-width: 100%;
 }
