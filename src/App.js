@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Top from "./components/Pages/Top/Top";
 import Koijan from "./components/Pages/Work/koijan";
 import Moneyrecords from "./components/Pages/Work/moneyrecords";
+import MrhmdLFL from "./components/Pages/Work/mrhmdLFL";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
         <Routes>
           <Route path="portfolio/" element={<Top />} />
+          <Route path="portfolio/work/mrhmdLFL" element={<MrhmdLFL />} />
           <Route path="portfolio/work/koi-jan" element={<Koijan />} />
           <Route path="portfolio/work/money-records" element={<Moneyrecords />} />
         </Routes>

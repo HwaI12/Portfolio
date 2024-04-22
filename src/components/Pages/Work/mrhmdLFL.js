@@ -1,6 +1,6 @@
 import React from "react";
 
-const Moneyrecords = () => {
+const mrhmdLFL = () => {
   return (
     <div className="container text-center">
       <div>hello</div>
@@ -8,4 +8,4 @@ const Moneyrecords = () => {
   );
 };
 
-export default Moneyrecords;
+export default mrhmdLFL;
