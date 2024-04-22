@@ -1,6 +1,6 @@
 import React from "react";
 
-const moneyrecords = () => {
+const orderstream = () => {
   return (
     <div className="container text-center">
       <div>hello</div>
@@ -8,4 +8,4 @@ const moneyrecords = () => {
   );
 };
 
-export default moneyrecords;
+export default orderstream;

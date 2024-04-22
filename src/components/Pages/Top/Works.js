@@ -55,8 +55,8 @@ const Works = () => {
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/koi-jan")}>
             <h3>恋じゃん</h3>
           </div>
-          <div className='slider-list'>
-            <h3>4</h3>
+          <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/order-stream")}>
+            <h3>OrderStream</h3>
           </div>
           <div className='slider-list'>
             <h3>5</h3>
