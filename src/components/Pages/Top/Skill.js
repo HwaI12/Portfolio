@@ -28,8 +28,6 @@ const Skill = () => {
         setNumColumns(3);
       } else if (window.innerWidth >= 576) {
         setNumColumns(2);
-      } else {
-        setNumColumns(1);
       }
     };
 
@@ -61,7 +59,7 @@ const Skill = () => {
     <section className="page-section" id="Skill">
       <div className="service">
         <div className="text-center">
-          <h2 className="section-heading text-uppercase">Skill</h2>
+          <h2 className="text-uppercase">Skill</h2>
           <div className="skill-image-list" style={{ gridTemplateColumns: `repeat(${numColumns}, 1fr)` }}>
             {skillLogos.map((logo, index) => (
               <img

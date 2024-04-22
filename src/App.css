@@ -229,16 +229,19 @@ footer {
 }
 
 .skill-image-list {
+  position: relative;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   margin: 0 auto;
   justify-items: center;
+  top: 20px;
 }
 
 .skill-image-list img {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
+  
 }
 
 
