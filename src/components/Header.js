@@ -31,10 +31,10 @@ const Header = () => {
       </div>
 
       <nav className="nav">
-        <Scroll to="Aboutme" className="header-scroll" offset={-110}>About</Scroll>
-        <Scroll to="News" className="header-scroll" offset={-110}>News</Scroll>
-        <Scroll to="Works" className="header-scroll" offset={-110}>Works</Scroll>
-        <Scroll to="Skill" className="header-scroll" offset={-110}>Skill</Scroll>
+        <Scroll to="Aboutme" className="header-scroll" offset={-110}>ABOUT</Scroll>
+        <Scroll to="News" className="header-scroll" offset={-110}>NEWS</Scroll>
+        <Scroll to="Works" className="header-scroll" offset={-110}>WORKS</Scroll>
+        <Scroll to="Skill" className="header-scroll" offset={-110}>SKILLS</Scroll>
       </nav>
     </header>
   );

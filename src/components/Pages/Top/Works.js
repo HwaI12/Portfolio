@@ -52,7 +52,7 @@ const Works = () => {
         </div>
         <Slider {...settings}>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/mrhmdLFL")}>
-            <h3>MRHMDと物体認識・・・</h3>
+            <h3>MRHMDと物体認識...</h3>
             <img src={MRHMD} alt="MRHMD" />
           </div>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/money-records")}>
