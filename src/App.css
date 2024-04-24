@@ -229,6 +229,11 @@ footer {
   cursor: pointer;
 }
 
+.slider-list img {
+  width: 100%;
+  height: auto;
+}
+
 .skill-image-list {
   position: relative;
   display: grid;
