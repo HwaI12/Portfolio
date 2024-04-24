@@ -22,7 +22,7 @@ const OrderStream = () => {
   return (
     <div className={`container text-center ${fadeIn ? "fade-in" : ""}`}>
       <section className='Top'>
-        <h2 className={`text-uppercase ${fadeIn ? "fade-in" : ""}`}>Order Stream</h2>
+        {/* <h2 className={`text-uppercase ${fadeIn ? "fade-in" : ""}`}>Order Stream</h2> */}
         <div className={`g-slide ${fadeIn ? "fade-in" : ""}`} style={{ maxWidth: "960px", width: "100%", margin: "20px auto" }}>
           <div style={{ position: "relative", paddingBottom: "56.25%", width: "100%", height: 0 }}>
             <iframe

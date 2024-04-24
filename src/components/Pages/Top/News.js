@@ -35,7 +35,7 @@ const News = () => {
           <div className='detail-news'>
             <p class="date">2023/12/03</p>
             <p class="title">
-              <Link to="/portfolio/work/orker-stream">サポーターズ主催 技育CAMPマンスリーハッカソン vol.12 参加</Link>
+              <Link to="/portfolio/work/order-stream">サポーターズ主催 技育CAMPマンスリーハッカソン vol.12 参加</Link>
             </p>
           </div>
           <div className='detail-news'>

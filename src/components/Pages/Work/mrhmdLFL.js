@@ -15,7 +15,7 @@ const MrhmdLFL = () => {
   return (
     <div className={`container text-center ${fadeIn ? "fade-in" : ""}`}>
       <section className='Top'>
-        <h2 className={`text-uppercase ${fadeIn ? "fade-in" : ""}`} style={{ margin: "0 0 20px 0" }}>MRHMDと物体認識を活用した日常環境における自然な外国語学習手法の提案</h2>
+        {/* <h2 className={`text-uppercase ${fadeIn ? "fade-in" : ""}`} style={{ margin: "0 0 20px 0" }}>MRHMDと物体認識を活用した日常環境における自然な外国語学習手法の提案</h2> */}
         <div className={`${fadeIn ? "fade-in" : ""}`} style={{ maxWidth: "960px", width: "100%" }}>
           <div style={{ position: "relative", width: "100%", paddingBottom: "59.27%", boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)", borderRadius: "8px", overflow: "hidden" }}>
             <iframe title="Canva Slide"
