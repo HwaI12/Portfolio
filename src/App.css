@@ -219,20 +219,23 @@ footer {
 .slick-prev:before,
 .slick-next:before {
   color: #BFB7A8 !important;
-  font-size: 25px !important;
+  font-size: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-list {
   padding: 20px;
   text-align: center;
-  height: 300px;
   cursor: pointer;
 }
 
 .slider-list img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: auto;
 }
+
 
 .skill-image-list {
   position: relative;
