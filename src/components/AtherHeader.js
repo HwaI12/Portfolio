@@ -27,7 +27,7 @@ const AtherHeader = () => {
     return (
         <header className={`header ${isScrolled ? "is_scroll" : ""}`}>
             <div className="logo">
-                <Link to="/portfolio" className="header-scroll">Ishikawa Fami</Link>
+                <Link to="/portfolio" className="header-scroll">Fami Ishikawa</Link>
             </div>
         </header>
     );
