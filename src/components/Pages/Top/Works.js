@@ -3,6 +3,11 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import MRHMD from '../../../Images/slide_image/MRHMD_86.png';
+import MONEY from '../../../Images/slide_image/MONEY_23_vol5.png';
+import KOIJAN from '../../../Images/slide_image/KOIJAN_23_vol3.png';
+import ORDER from '../../../Images/slide_image/ORDER_23_vol12.png';
+
 import { useNavigate } from 'react-router-dom';
 
 const Works = () => {
@@ -47,16 +52,20 @@ const Works = () => {
         </div>
         <Slider {...settings}>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/mrhmdLFL")}>
-            <h3>MRHMDと物体認識を活用した日常環境における自然な外国語学習手法の提案</h3>
+            <h3>MRHMDと物体認識・・・</h3>
+            <img src={MRHMD} alt="MRHMD" />
           </div>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/money-records")}>
             <h3>Moneyrecords</h3>
+            <img src={MONEY} alt="MONEY" />
           </div>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/koi-jan")}>
             <h3>恋じゃん</h3>
+            <img src={KOIJAN} alt="KOIJAN" />
           </div>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/order-stream")}>
             <h3>OrderStream</h3>
+            <img src={ORDER} alt="ORDER" />
           </div>
           {/* <div className='slider-list'>
             <h3>5</h3>

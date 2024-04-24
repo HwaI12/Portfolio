@@ -31,7 +31,7 @@ function App() {
 
 function HeaderSelector() {
   const location = useLocation();
-  const isPortfolioPage = location.pathname.startsWith("/portfolio/");
+  const isPortfolioPage = location.pathname.startsWith("/portfolio/work/");
   return isPortfolioPage ? <AtherHeader /> : <Header />;
 }
 

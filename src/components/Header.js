@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? "is_scroll" : ""}`}>
       <div className="logo">
-        <Scroll to="Topprofile" className="header-scroll">Ishikawa Fami</Scroll>
+        <Scroll to="Topprofile" className="header-scroll">Fami Ishikawa</Scroll>
       </div>
 
       <nav className="nav">
