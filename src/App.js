@@ -16,11 +16,11 @@ function App() {
         <HeaderSelector />
 
         <Routes>
-          <Route path="portfolio/" element={<Top />} />
-          <Route path="portfolio/work/mrhmdLFL" element={<MrhmdLFL />} />
-          <Route path="portfolio/work/koi-jan" element={<Koijan />} />
-          <Route path="portfolio/work/money-records" element={<Moneyrecords />} />
-          <Route path="portfolio/work/order-stream" element={<OrderStream />} />
+          <Route path="/portfolio" element={<Top />} />
+          <Route path="/portfolio/work/mrhmdLFL" element={<MrhmdLFL />} />
+          <Route path="/portfolio/work/koi-jan" element={<Koijan />} />
+          <Route path="/portfolio/work/money-records" element={<Moneyrecords />} />
+          <Route path="/portfolio/work/order-stream" element={<OrderStream />} />
         </Routes>
 
         <Footer />

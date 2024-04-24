@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link as Scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
 
 const AtherHeader = () => {
@@ -30,13 +29,6 @@ const AtherHeader = () => {
             <div className="logo">
                 <Link to="/portfolio" className="header-scroll">Ishikawa Fami</Link>
             </div>
-
-            <nav className="nav">
-                <Scroll to="Aboutme" className="header-scroll" offset={-110}>About</Scroll>
-                <Scroll to="News" className="header-scroll" offset={-110}>News</Scroll>
-                <Scroll to="Works" className="header-scroll" offset={-110}>Works</Scroll>
-                <Scroll to="Skill" className="header-scroll" offset={-110}>Skill</Scroll>
-            </nav>
         </header>
     );
 };
