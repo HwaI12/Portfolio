@@ -31,7 +31,7 @@ const Footer = () => {
             </dev>
             
             <dev className="footer-contact">
-                <p>©︎2023 Fami Ishikawa</p>
+                <p>©︎2024 Fami Ishikawa</p>
             </dev>
         </footer>
     );

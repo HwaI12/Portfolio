@@ -59,7 +59,7 @@ const Skill = () => {
     <section className="page-section" id="Skill">
       <div className="service">
         <div className="text-center">
-          <h2 className="text-uppercase">Skill</h2>
+          <h2 className="text-uppercase">Skills</h2>
           <div className="skill-image-list" style={{ gridTemplateColumns: `repeat(${numColumns}, 1fr)` }}>
             {skillLogos.map((logo, index) => (
               <img
