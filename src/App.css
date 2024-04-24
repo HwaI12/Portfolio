@@ -226,6 +226,7 @@ footer {
   padding: 20px;
   text-align: center;
   height: 300px;
+  cursor: pointer;
 }
 
 .skill-image-list {
