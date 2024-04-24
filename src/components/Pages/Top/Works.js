@@ -51,9 +51,6 @@ const Works = () => {
           <h2 className="text-uppercase">Works</h2>
         </div>
         <Slider {...settings}>
-          <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/mrhmdLFL")}>
-            <img src={MRHMD} alt="MRHMD" />
-          </div>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/money-records")}>
             <img src={MONEY} alt="MONEY" />
           </div>
@@ -62,6 +59,9 @@ const Works = () => {
           </div>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/order-stream")}>
             <img src={ORDER} alt="ORDER" />
+          </div>
+          <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/mrhmdLFL")}>
+            <img src={MRHMD} alt="MRHMD" />
           </div>
           {/* <div className='slider-list'>
             <h3>5</h3>
