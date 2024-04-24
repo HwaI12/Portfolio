@@ -58,12 +58,12 @@ const Works = () => {
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/order-stream")}>
             <h3>OrderStream</h3>
           </div>
-          <div className='slider-list'>
+          {/* <div className='slider-list'>
             <h3>5</h3>
           </div>
           <div className='slider-list'>
             <h3>6</h3>
-          </div>
+          </div> */}
         </Slider>
       </div>
     </section>
