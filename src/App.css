@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.container, .container-lg, .container-md, .container-sm {
+  max-width: 75vw !important;
+}
+
 header {
   display: flex;
   justify-content: space-between;
