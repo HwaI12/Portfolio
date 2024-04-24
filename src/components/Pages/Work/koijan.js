@@ -23,15 +23,17 @@ const Koijan = () => {
     <div className={`container text-center ${fadeIn ? "fade-in" : ""}`}>
       <section className='Top'>
         <h2 className={`text-uppercase ${fadeIn ? "fade-in" : ""}`}>恋じゃん</h2>
-        <div className={`g-slide ${fadeIn ? "fade-in" : ""}`} style={{ maxWidth: "960px", width: "100%", maxHeight: "569px", height: "100%", margin: "0 auto" }}>
-          <iframe
-            title="Google Presentation"
-            src="https://docs.google.com/presentation/d/e/2PACX-1vRHkQVU8VvXyiUsWqIGROUxcIHuejJwTUnrzfr69e87YyMgbmtEq9vgzCfAvHGtti9688h2Rl7U88bQ/embed?start=false&loop=false&delayms=3000"
-            style={{ width: "100%", height: "100%" }}
-            allowFullScreen={true}
-            mozAllowFullScreen={true}
-            webkitAllowFullScreen={true}
-          ></iframe>
+        <div className={`g-slide ${fadeIn ? "fade-in" : ""}`} style={{ maxWidth: "960px", width: "100%", margin: "0 auto" }}>
+          <div style={{ position: "relative", paddingBottom: "56.25%", width: "100%", height: 0 }}>
+            <iframe
+              title="Google Presentation"
+              src="https://docs.google.com/presentation/d/e/2PACX-1vRHkQVU8VvXyiUsWqIGROUxcIHuejJwTUnrzfr69e87YyMgbmtEq9vgzCfAvHGtti9688h2Rl7U88bQ/embed?start=false&loop=false&delayms=3000"
+              style={{ position: "absolute", width: "100%", height: "100%", top: 0, left: 0 }}
+              allowFullScreen={true}
+              mozAllowFullScreen={true}
+              webkitAllowFullScreen={true}
+            ></iframe>
+          </div>
         </div>
         <div className={`github-link-logo ${fadeIn ? "fade-in" : ""}`} onClick={handleGithubClick}>
           <img src={githubLogo} alt="GitHub" />
