@@ -7,6 +7,7 @@ import MRHMD from '../../../Images/slide_image/MRHMD_86.png';
 import MONEY from '../../../Images/slide_image/MONEY_23_vol5.png';
 import KOIJAN from '../../../Images/slide_image/KOIJAN_23_vol3.png';
 import ORDER from '../../../Images/slide_image/ORDER_23_vol12.png';
+import CHIC from '../../../Images/slide_image/CHIC_23_3Q.png';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -60,15 +61,15 @@ const Works = () => {
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/order-stream")}>
             <img src={ORDER} alt="ORDER" />
           </div>
+          <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/chic-sight")}>
+            <img src={CHIC} alt="CHIC" />
+          </div>
           <div className='slider-list' onClick={() => handleSlideClick("/portfolio/work/mrhmdLFL")}>
             <img src={MRHMD} alt="MRHMD" />
           </div>
           {/* <div className='slider-list'>
-            <h3>5</h3>
-          </div>
-          <div className='slider-list'>
             <h3>6</h3>
-          </div> */}
+          </div>  */}
         </Slider>
       </div>
     </section>

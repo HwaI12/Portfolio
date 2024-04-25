@@ -8,6 +8,7 @@ import Koijan from "./components/Pages/Work/koijan";
 import Moneyrecords from "./components/Pages/Work/moneyrecords";
 import MrhmdLFL from "./components/Pages/Work/mrhmdLFL";
 import OrderStream from "./components/Pages/Work/orderstream";
+import ChicSight from "./components/Pages/Work/chicsight";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/portfolio/work/koi-jan" element={<Koijan />} />
           <Route path="/portfolio/work/money-records" element={<Moneyrecords />} />
           <Route path="/portfolio/work/order-stream" element={<OrderStream />} />
+          <Route path="/portfolio/work/chic-sight" element={<ChicSight />} />
         </Routes>
 
         <Footer />
