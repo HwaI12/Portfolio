@@ -35,7 +35,7 @@ header.is_scroll {
 
 header .logo a,
 header .nav a {
-  font-size: 23px;
+  font-size: 25px;
   margin: 0;
   padding: 0;
   color: var(--white-color);
@@ -58,7 +58,7 @@ header .nav a:hover {
 }
 
 header.is_scroll a {
-  font-size: 19px;
+  font-size: 23px;
 }
 
 header.is_scroll a:hover {
@@ -82,19 +82,19 @@ header.is_scroll a:hover {
 
 .Top h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .Top p {
-  font-size: 25px;
+  font-size: 30px;
   margin: 0;
 }
 
 .profileImage {
   object-fit: cover;
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -235,9 +235,15 @@ footer {
   cursor: pointer;
 }
 
+.slider-list :hover {
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
 .slider-list img {
   max-width: 100%;
   max-height: auto;
+  border-radius: 10px;
 }
 
 
