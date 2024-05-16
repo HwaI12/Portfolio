@@ -220,6 +220,12 @@ footer {
   color: #FEFEFD;
 }
 
+.icon img {
+  margin: 30px 20px;
+  width: 30px;
+  height: 24px;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: #BFB7A8 !important;
@@ -306,7 +312,7 @@ footer {
 
 .skill-name {
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 3px;
 }
 
 .skill-description {
