@@ -277,6 +277,43 @@ footer {
   animation: fadeIn ease 1s; /* アニメーションのプロパティを設定 */
 }
 
+.skill-image-list {
+  display: grid;
+  gap: 20px;
+}
+
+.skill-image-list img {
+  max-width: 15%;
+  height: auto;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  max-width: 90%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.skill-logo {
+  margin-right: 20px;
+}
+
+.skill-details {
+  max-width: 400px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.skill-description {
+  font-size: 0.8em;
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0; /* 開始時の透明度を0に設定 */
