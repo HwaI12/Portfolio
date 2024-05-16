@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.002271bb.css",
-    "main.js": "/portfolio/static/js/main.6f0f99dc.js",
+    "main.css": "/portfolio/static/css/main.d1ba9d1d.css",
+    "main.js": "/portfolio/static/js/main.7873b7f7.js",
     "static/media/ORDER_23_vol12.png": "/portfolio/static/media/ORDER_23_vol12.fe4c9a259906afa086ac.png",
     "static/media/MONEY_23_vol5.png": "/portfolio/static/media/MONEY_23_vol5.999fbfb13153def1c148.png",
     "static/media/KOIJAN_23_vol3.png": "/portfolio/static/media/KOIJAN_23_vol3.b017de6cc7a319628e47.png",
@@ -9,6 +9,7 @@
     "static/media/CHIC_23_3Q.png": "/portfolio/static/media/CHIC_23_3Q.dba6df43c141dde8aaca.png",
     "static/media/hwami.jpg": "/portfolio/static/media/hwami.00d5147d32da26ae645e.jpg",
     "static/media/postgresql_original_logo_icon_146391.png": "/portfolio/static/media/postgresql_original_logo_icon_146391.6aa19142422261e25b76.png",
+    "static/media/wantedly.png": "/portfolio/static/media/wantedly.f3bb8e2f3d304a92f8d1.png",
     "static/media/docker_icon_146192.png": "/portfolio/static/media/docker_icon_146192.1d3ff0b1550659e3203a.png",
     "static/media/react_original_logo_icon_146374.png": "/portfolio/static/media/react_original_logo_icon_146374.b37f0a4b7134b3c99d6e.png",
     "static/media/python_logo_icon_168886.png": "/portfolio/static/media/python_logo_icon_168886.02179dfb4cb3a629d83b.png",
@@ -16,18 +17,16 @@
     "static/media/github-logo_icon-icons.com_73546.png": "/portfolio/static/media/github-logo_icon-icons.com_73546.8e2a9e7d53fa4340a09e.png",
     "static/media/file_type_css_icon_130661.png": "/portfolio/static/media/file_type_css_icon_130661.5491a3b05b4addb59c15.png",
     "static/media/file_type_html_icon_130541.png": "/portfolio/static/media/file_type_html_icon_130541.397540dec969b31fd37c.png",
-    "static/media/nextjs_icon_132160.png": "/portfolio/static/media/nextjs_icon_132160.2b05ac76365076dc3243.png",
-    "static/media/nodejs_plain_logo_icon_146409.png": "/portfolio/static/media/nodejs_plain_logo_icon_146409.51006192da94721021b1.png",
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.002271bb.css.map": "/portfolio/static/css/main.002271bb.css.map",
-    "main.6f0f99dc.js.map": "/portfolio/static/js/main.6f0f99dc.js.map"
+    "main.d1ba9d1d.css.map": "/portfolio/static/css/main.d1ba9d1d.css.map",
+    "main.7873b7f7.js.map": "/portfolio/static/js/main.7873b7f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.002271bb.css",
-    "static/js/main.6f0f99dc.js"
+    "static/css/main.d1ba9d1d.css",
+    "static/js/main.7873b7f7.js"
   ]
 }
