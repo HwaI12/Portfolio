@@ -32,7 +32,7 @@ const Footer = () => {
                     </svg>
                 </a>
                 <a href={wantedly} target="_blank" rel="noopener noreferrer">
-                    <img src={wantedlyIcon} alt="Wantedly" /> {/* Wantedly icon */}
+                    <img src={wantedlyIcon} alt="Wantedly" />
                 </a>
             </dev>
 

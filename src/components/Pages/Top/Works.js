@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Works = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
-  const navigate = useNavigate(); // 正しいフック名に修正
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
