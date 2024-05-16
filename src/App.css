@@ -243,7 +243,7 @@ footer {
 .slider-list img {
   max-width: 100%;
   max-height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 
@@ -296,9 +296,11 @@ footer {
     padding: 0 3vw;
   }
 
-  header .logo a,
+  header .logo a {
+    font-size: 25px;
+  }
   header .nav a {
-    font-size: 19px;
+    font-size: 20px;
     margin: 0 13px;
   }
 
@@ -307,8 +309,8 @@ footer {
   }
 
   .profileImage {
-    height: 50vw;
-    width: 50vw;
+    height: 40vw;
+    width: 40vw;
   }
 
   .Top-detail {
