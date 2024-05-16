@@ -17,14 +17,18 @@ const Works = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setSlidesToShow(3);
-      } else if (window.innerWidth >= 576) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(1);
+      let slides = 1;
+      if (window.innerWidth >= 992) {
+          slides = 3;
+      } else if (window.innerWidth >= 768) {
+          slides = 2;
+      } else if (window.innerWidth >= 650) {
+          slides = 1;
       }
-    };
+      setSlidesToShow(slides);
+  };
+  
+  
 
     handleResize();
     window.addEventListener('resize', handleResize);

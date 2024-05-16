@@ -289,7 +289,7 @@ footer {
 }
 
 .skill-image-list img {
-  max-width: 15%;
+  max-width: 85px;
   height: auto;
 }
 
@@ -303,7 +303,7 @@ footer {
 }
 
 .skill-logo {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .skill-details {
@@ -316,7 +316,7 @@ footer {
 }
 
 .skill-description {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 

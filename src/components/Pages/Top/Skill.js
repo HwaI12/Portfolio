@@ -17,16 +17,13 @@ const Skill = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1200) {
-        setNumColumns(2);
-      } else if (window.innerWidth >= 992) {
-        setNumColumns(2);
-      } else if (window.innerWidth >= 768) {
-        setNumColumns(2);
-      } else if (window.innerWidth >= 576) {
-        setNumColumns(1);
+      let columns = 1;
+      if (window.innerWidth >= 992) {
+          columns = 2;
       }
-    };
+      setNumColumns(columns);
+  };
+  
 
     handleResize();
     window.addEventListener('resize', handleResize);
